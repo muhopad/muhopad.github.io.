@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Редактор Вика Добричева</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<svg style="display:none;">
+  <filter id="magazine-grain">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch" />
+    <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.14 0" />
+    <feComposite operator="in" in2="SourceGraphic" />
+  </filter>
+</svg>
+
+<header class="editorial-meta">
+  <span>Портфолио редактора</span>
+  <nav class="meta-links">
+    <a href="#about">Обо мне</a> · 
+    <a href="#projects">Проекты</a> · 
+    <a href="#education">Образование</a> ·
+    <a href="#contacts">Контакты</a>
+  </nav>
+</header>
+
+<section class="magazine-cover">
+  <div class="cover-photo-frame grain-effect">
+    
+    <img src="https://optim.tildacdn.ink/tild6235-6533-4133-a363-346335333237/-/format/webp/photo_2026-05-28_205.png.webp" class="editorial-img">
+
+    <div class="cover-typography">
+      <h1 class="main-title">Вика Добричева</h1>
+      <p>Автор в <a href="https://samokat.ru" target="_blank">Самокате</a></p>
+      <p>
+        Писала для <a href="https://t.me" target="_blank">NATALYA SHIK</a>,
+        <a href="https://shikstore.ru" target="_blank">Shik.studio</a>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about-text" id="about">
+  <div class="about-text__top-container">
+    <h3 class="about-text__title">Обо мне</h3>
+    <div class="about-text__content">
+      <p>Когда мне было 14 лет, я попросилась работать в издательство детского журнала — и меня взяли! С 2012 года пишу статьи, рассказы, посты и прототипы лендингов. По образованию я юрист: умею объяснять сложное простыми словами, выделять главное и доказывать пользу через факты.</p>
+
+      <p class="commercial-highlight">
+        Пишите, если нужно запустить рассылку, настроить тональность бренда или спроектировать сайт.
+      </p>
+
+      <a href="https://t.me" class="about-telegram-btn" target="_blank">Мой Телеграм →</a>
+    </div>
+
+    <hr class="about-text__divider">
+
+</section>
+
+<section class="facts-block">
+
+  <div class="facts-layout">
+
+    <!-- ЛЕВАЯ КОЛОНКА -->
+    <div class="facts-left">
+      <h3 class="facts-title">Мой опыт</h3>
+
+      <ul class="facts-list">
+        <li>Писала научные работы о правах человека</li>
+        <li>Была шеф-редактором студенческих новостей в&nbsp;РАНХиГС</li>
+        <li>Стажировалась на&nbsp;региональном ТВ Катунь24</li>
+        <li>Работала редактором в&nbsp;SMM-агентстве</li>
+        <li>Публиковалась в&nbsp;литературном журнале «Дальний Восток»</li>
+        <li>Получила премию Президента за&nbsp;достижения в журналистике</li>
+      </ul>
+    </div>
+
+    <!-- ПРАВАЯ КОЛОНКА -->
+    <div class="facts-right">
+  <div class="photo-wrapper">
+    <img
+      src="https://optim.tildacdn.ink/tild6466-6136-4638-b265-336664363938/-/format/webp/__2026-05-29_131141.png.webp"
+      class="facts-photo"
+      alt="portrait"
+    />
+
+    <div class="photo-caption">
+      Здесь при помощи правильных слов и аргументов я защищаю права малышей с&nbsp;заболеваниями. 2018 год
+    </div>
+  </div>
+</div>
+</section>
+
+    <hr class="about-text__divider">
+
+
+
+  <!-- ==========================================================================
+     РАЗДЕЛ ПРОЕКТОВ (ИСПРАВЛЕННАЯ СТРУКТУРА С БЛОКАМИ ДЛЯ ВКЛАДОК)
+     ========================================================================== -->
+<main class="franchi-portfolio" id="projects">
+  
+  <!-- КВАДРАТНЫЙ ТУМБЛЕР КАТЕГОРИЙ -->
+  <nav class="franchi-tabs">
+    <button class="franchi-tab-btn active" data-tab="tab-longreads">Лонгриды</button>
+    <button class="franchi-tab-btn" data-tab="tab-landings">Лендинги и интерфейсы</button>
+    <button class="franchi-tab-btn" data-tab="tab-brand">Бренд-коммуникации</button>
+    <button class="franchi-tab-btn" data-tab="tab-internal">Внутренние коммуникации</button>
+  </nav>
+
+  <!-- ПОТОК КЕЙСОВ,РАЗБИТЫЙ НА ОТДЕЛЬНЫЕ БЛОКИ-ВКЛАДКИ -->
+  <div class="franchi-cases-flow">
+
+    <!-- ==================== БЛОК 1: ЛОНГРИДЫ ==================== -->
+    <div class="franchi-tab-content" id="tab-longreads">
+      
+      <!-- Кейс 01: Круг влияния -->
+      <article class="franchi-case-row">
+        <div class="case-col-meta">
+          <div class="case-tag-magazine">Журнал «PROВРЕМЯ»</div>
+        </div>
+        <div class="case-col-content">
+          <a href="https://singularity-app.ru" class="case-title-link" target="_blank">
+            <h3 class="case-title">Круг влияния и круг забот: как работать с проблемами &rarr;</h3>
+          </a>
+          <p class="case-paragraph"> Перевела психологическую концепцию Стивена Кови на язык простых примеров, подготовила схемы для дизайнера и нативно встроила в контекст функции приложения Singularity App.</p>
+          <div class="case-stat-badge">20 000 просмотров</div>
+          <ul class="project-skills-badges">
+            <li><a href="#projects">Анализировать сложное</a></li>
+            <li><a href="#projects">Визуальное повествование</a></li>
+            <li><a href="#projects">Нативно интегрировать продукт</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Кейс 02: Негативные отзывы -->
+      <article class="franchi-case-row">
+        <div class="case-col-meta">
+          <div class="case-tag-magazine">«Школа Продашь!»</div>
+        </div>
+        <div class="case-col-content">
+          <a href="#" class="case-title-link" target="_blank">
+            <h3 class="case-title">Как отвечать на негативные отзывы о&nbsp;компании &rarr;</h3>
+          </a>
+          <p class="case-paragraph">Разобрала реальные кейсы с маркетплейсов и 2ГИС. На основе анализа самых частых конфликтов написала 6 шаблонов для ответов, которые сохраняют лояльность клиента даже после неприятного опыта. Статья стала вечнозеленым инструментом для предпринимателей и завирусилась.</p>
+          <div class="case-stat-badge">72 000 просмотров</div>
+          <ul class="project-skills-badges">
+            <li><a href="#projects">Исследовать рынок и боли клиентов</a></li>
+            <li><a href="#projects">Писать готовые инструкции и шаблоны</a></li>
+            <li><a href="#projects">Приносить измеримую пользу бизнесу</a></li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+
+    <!-- ==================== БЛОК 2: ЛЕНДИНГИ И ИНТЕРФЕЙСЫ ==================== -->
+    <div class="franchi-tab-content" id="tab-landings" style="display: none;">
+      
+      <!-- Кейс 03: shikstore.ru -->
+      <article class="franchi-case-row">
+        <div class="case-col-meta">
+          <div class="case-tag-magazine">shikstore.ru</div>
+        </div>
+        <div class="case-col-content">
+          <a href="https://shikstore.ru" class="case-title-link" target="_blank">
+            <h3 class="case-title">Переработка мультибрендовой страницы «О нас» &rarr;</h3>
+          </a>
+          <p class="case-paragraph">Переработала страницу «О нас» для мультибрендовой компании. Развела позиционирование дочерних брендов в тексте, чтобы они перестали конкурировать друг с другом на одном сайте.</p>
+        
+          <ul class="project-skills-badges">
+            <li><a href="#projects">Создавать текстовые прототипы</a></li>  <li><a href="#projects">Позиционировать бренд</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Кейс 04: FreeMan’s coffee-bar -->
+      <article class="franchi-case-row">
+        <div class="case-col-meta">
+          <div class="case-tag-magazine">FreeMan’s</div>
+        </div>
+        <div class="case-col-content">
+          <a href="https://freemanscoffeebar.ru/" class="case-title-link" target="_blank">
+            <h3 class="case-title">Прототип для продажи франшизы для&nbsp;кофейни &rarr;</h3>
+          </a>
+          <p class="case-paragraph">Спроектировала прототип страницы для продажи франшизы. На основе анализа рынка собрала аргументы, которые закрывают главные страхи потенциальных партнеров: от окупаемости до поставок зерна.</p>
+          <ul class="project-skills-badges">
+            
+            <li><a href="#projects">Анализировать конкурентов</a></li>
+            <li><a href="#projects">Работать с возражениями</a></li>
+            <li><a href="#projects">Создавать текстовые прототипы</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Кейс 05: Отель Центральный -->
+      <article class="franchi-case-row">
+        <div class="case-col-meta">
+          <div class="case-tag-magazine">Отель «Центральный»</div>
+        </div>
+        <div class="case-col-content">
+          <a href="https://hotelcentral.ru/" class="case-title-link" target="_blank">
+            <h3 class="case-title">Редактура главной страницы отеля &rarr;</h3>
+          </a>
+          <p class="case-paragraph">Проанализировала 200 реальных отзывов гостей, вытащила главные плюсы продукта. Вместо шаблонного «У нас уютно» собрали емкие тезисы .</p>
+          <div class="case-stat-badge">200 отзывов изучено</div>
+          <ul class="project-skills-badges">
+            
+            <li><a href="#projects">Исследовать рынок и боли клиентов</a></li>
+            <li><a href="#projects">Рассказывать о преимуществах </a></li>
+            <li><a href="#projects">Создавать текстовые прототипы</a></li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+
+    <!-- ==================== БЛОК 3: БРЕНД-КОММУНИКАЦИИ ==================== -->
+    <div class="franchi-tab-content" id="tab-brand" style="display: none;">
+      
+      <!-- Кейс 06: Тексты для NATALYA SHIK -->
+      <article class="franchi-case-row">
+        <div class="case-col-meta">
+          <div class="case-tag-magazine">Shik.studio</div>
+        </div>
+        <div class="case-col-content">
+          <a href="https://shikstore.ru" class="case-title-link" target="_blank">
+            <h3 class="case-title">Тексты для NATALYA SHIK и Shik.studio &rarr;</h3>
+          </a>
+          <p class="case-paragraph">Вместо агрессивных призывов купить сделала акцент на тактильных ощущениях от текстуры кремов, ежедневных ритуалах и цитатах основательницы. Для федеральной рекламной кампании (СТС, ТНТ, Пятница!) создала слоган «В каждой сумочке» и написала сценарий видеоролика.</p>
+          
+          <div class="case-inner-work-list">
+            <div class="work-list-title">Запущенные проекты:</div>
+              <li>
+  <a href="https://t.me/natalyashiktg/657" target="_blank">
+    Канал NATALYA SHIK
+  </a>
+</li>
+            <li>
+  <a href="https://shikstore.ru/news/calzedonia-x-shikstudio" target="_blank">
+    SHIKstudio & Стеша Маликова
+  </a>
+</li> 
+            <li>
+  <a href="https://t.me/shikstudio/17110" target="_blank">
+    ФРК «Бальзам в каждой сумочке» 
+  </a>
+</li>
+            <li>
+  <a href="https://drive.google.com/file/d/1WRbwF6L_t3kg9Er9BvAg3ABPnAp-9eQM/view?usp=sharing" target="_blank">
+    Гайд по уходу SHIKstudio
+  </a>
+</li>
+   </div>         
+          <ul class="project-skills-badges">
+            <li><a href="#projects">Управлять ценностью </a></li>
+            <li><a href="#projects">Настраивать тон оф войс</a></li>
+            <li><a href="#projects">Создавать сценарии</a></li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+
+    <!-- ==================== БЛОК 4: ВНУТРЕННИЕ КОММУНИКАЦИИ ==================== -->
+    <div class="franchi-tab-content" id="tab-internal" style="display: none;">
+      
+      <!-- Кейс 07: Изменения в НДС -->
+      <article class="franchi-case-row">
+        <div class="case-col-meta">
+          <div class="case-tag-magazine">Внутриком / B2B</div>
+        </div>
+        <div class="case-col-content">
+          <a href="https://drive.google.com/file/d/1FBc-Af3YWOYtxj2ZG396LQkPrZgemw8x/view?usp=sharing" class="case-title-link" target="_blank">
+            <h3 class="case-title">Изменения в НДС: как работать с контрагентами &rarr;</h3>
+          </a>
+          <p class="case-paragraph">Написали, как работать с закупками после поправок к законодательству. Изучила 50 страниц юридических драфтов и разъяснений, сократила их до двух страниц понятных правил работы с 1 января. Удалось обойтись без привлечения дизайнеров и инфографики.</p>
+          <div class="case-stat-badge">50 страниц юридического текста переработано</div>
+          <ul class="project-skills-badges">
+            <li><a href="#projects">Выделять главное</a></li>
+            <li><a href="#projects">Писать инструкции и шаблоны</a></li>
+            <li><a href="#projects">Анализировать сложное</a></li>
+          </ul>
+        </div>
+      </article>
+
+            <!-- Кейс 08: Интервью с курьером-->
+      <article class="franchi-case-row">
+        <div class="case-col-meta">
+          <div class="case-tag-magazine">Внутриком </div>
+        </div>
+        <div class="case-col-content">
+          <a href="https://drive.google.com/drive/folders/1YLCrfInq_zXJih3NwRHpq25AMe0tecrx?usp=sharing" class="case-title-link" target="_blank">
+            <h3 class="case-title">Интервью с курьером-путешественником &rarr;</h3>
+          </a>
+          <p class="case-paragraph">Мой герой — курьер из Барнаула, который запустил собственные велотуры по Алтаю и поднялся на высоту 3226 метров в униформе бренда. Собрала его ответы в рассказ и добавила призыв делиться историями, что увеличило вовлеченность..</p>
+    
+          <ul class="project-skills-badges">
+            <li><a href="#projects">Проводить глубокие интервью</a></li>
+            <li><a href="#projects">Растить вовлеченность</a></li>
+          </ul>
+        </div>
+      </article>
+
+            <!-- Кейс 09: Зоокапсула -->
+      <article class="franchi-case-row">
+        <div class="case-col-meta">
+          <div class="case-tag-magazine">B2С</div>
+        </div>
+        <div class="case-col-content">
+          <a href="https://drive.google.com/drive/folders/1iBWId1tbAPpI2dL210FvUyjVdR0_JtyT?usp=sharing" class="case-title-link" target="_blank">
+            <h3 class="case-title">Анонс зоокапсулы от Самоката &rarr;</h3>
+          </a>
+          <p class="case-paragraph">Провела встречу с разработчиками продукта, отсекла лишние технические детали процесса и сфокусировалась на пользе самой капсулы. Текст помог поднять внутренние продажи.</p>
+         
+          <ul class="project-skills-badges">
+            <li><a href="#projects">Подсвечивать пользу продукта </a></li>
+            <li><a href="#projects">Растить продажи</a></li>
+            <li><a href="#projects">Управлять маркетингом</a></li>
+          </ul>
+        </div>
+      </article>
+
+            
+            </main>
+
+  <script>
+    const tabButtons = document.querySelectorAll('.franchi-tab-btn');
+    const tabContents = document.querySelectorAll('.franchi-tab-content');
+
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+
+        tabButtons.forEach(btn => {
+          btn.classList.remove('active');
+        });
+
+        button.classList.add('active');
+
+        tabContents.forEach(content => {
+          content.style.display = 'none';
+        });
+
+        const targetTab = button.dataset.tab;        document.getElementById(targetTab).style.display = 'block';
+      });
+    });
+  </script>
+
+</body>
+</html>
+            
